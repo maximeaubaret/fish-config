@@ -1,5 +1,5 @@
 function fish_prompt --description 'Write out the prompt'
-	
+
 	set -l last_status $status
 
 	if not set -q __fish_prompt_normal
@@ -15,7 +15,7 @@ function fish_prompt --description 'Write out the prompt'
 	printf '✈ '
 
 	# HOSTNAME
-	set_color blue 
+	set_color $fish_color_hostname
 	printf '%s ' (hostname -s)
 
 	# ARROW

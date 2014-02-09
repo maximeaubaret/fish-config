@@ -7,6 +7,9 @@ set -gx PATH $homebrew $brew_rbenv $default_path
 # Ruby (rbenv) : from https://coderwall.com/p/jfj4rg
 set -gx RBENV_ROOT /usr/local/var/rbenv
 
+# Set Hostcolor
+set fish_color_hostname cyan
+
 # ALIAS
 alias git=hub
 
