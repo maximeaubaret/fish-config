@@ -7,8 +7,15 @@ function fish_prompt --description 'Write out the prompt'
 	end
 
 	# USER
-	set_color blue
-	printf '%s ' (whoami)
+  set_color blue
+	printf '%s' (whoami)
+
+  set_color yellow
+  printf ' ❉ '
+
+  # GIT EMAIL
+  set_color blue
+  printf '@%s ' (git config user.email | awk -F'@' '{print $2}' | awk -F'.' '{print $1}')
 
 	# PLANE
 	set_color yellow
@@ -28,7 +35,9 @@ function fish_prompt --description 'Write out the prompt'
 
 	# GIT
 	set_color normal
-	printf '%s \n' (__fish_git_prompt)
+	printf '%s ' (__fish_git_prompt)
+
+  printf '\n'
 
 	# STAR
 	set_color blue
