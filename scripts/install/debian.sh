@@ -1,3 +1,6 @@
+# Install git
+sudo apt-get install -y git
+
 # Install hub
 sudo apt-get install -y rake
 mkdir -p ~/src/
