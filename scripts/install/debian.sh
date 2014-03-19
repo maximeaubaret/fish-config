@@ -15,3 +15,8 @@ sudo echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/
 sudo apt-get update
 sudo apt-get install -y fish
 
+# Install fish-config
+mkdir -p ~/.config
+cd ~/.config
+git clone https://github.com/maximeaubaret/fish-config fish
+cd

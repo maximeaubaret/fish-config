@@ -13,3 +13,9 @@ sudo rake install --prefix=/usr/local
 sudo apt-add-repository ppa:fish-shell/release-2
 sudo apt-get update
 sudo apt-get install -y fish
+
+# Install fish-config
+mkdir -p ~/.config
+cd ~/.config
+git clone https://github.com/maximeaubaret/fish-config fish
+cd
