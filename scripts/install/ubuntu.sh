@@ -1,13 +1,23 @@
+# Update
+sudo apt-get update -y
+
+# Install python-software-properties
+sudo apt-get install -y python-software-properties
+
 # Install git
 sudo apt-get install -y git
 
-# Install hub
+# Install rake
 sudo apt-get install -y rake
+
+# Create ~/src/ folder
 mkdir -p ~/src/
+
+# Install hub
 cd ~/src/
 git clone https://github.com/github/hub
 cd hub
-sudo rake install --prefix=/usr/local
+sudo rake install
 
 # Install fish
 sudo apt-add-repository ppa:fish-shell/release-2
