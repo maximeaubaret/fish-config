@@ -2,7 +2,7 @@
 sudo apt-get update -y
 
 # Install python-software-properties
-sudo apt-get install -y python-software-properties
+sudo apt-get install -y software-properties-common python-software-properties
 
 # Install git
 sudo apt-get install -y git
