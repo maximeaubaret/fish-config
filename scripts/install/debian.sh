@@ -7,6 +7,7 @@ mkdir -p ~/src/
 cd ~/src/
 git clone https://github.com/github/hub
 cd hub
+git checkout v1.12.4
 sudo rake install
 
 # Install fish
